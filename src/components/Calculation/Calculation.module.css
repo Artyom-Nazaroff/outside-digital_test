@@ -1,0 +1,73 @@
+.calcWrapper {
+    width: 100%;
+}
+
+.calcTitle {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 24px;
+}
+
+.calcItems {
+    margin: 0 0 20px 0;
+}
+
+.calcItem {
+    padding: 16px 0;
+    border-bottom: 1px solid #DFE3E6;
+}
+
+.calcCheckbox {
+    display: none;
+}
+
+.calcLabel {
+    font-size: 14px;
+    line-height: 24px;
+    padding: 0 0 0 30px;
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+
+.calcLabel::before {
+    content: '';
+    display: block;
+    width: 20px;
+    height: 20px;
+    border: 1px solid #DFE3E6;
+    border-radius: 6px;
+    box-sizing: border-box;
+    position: absolute;
+    left: 0;
+    cursor: pointer;
+}
+
+.calcLabel:hover::before {
+    border: 1px solid #000;
+}
+
+.calcLabel::after {
+    content: '';
+    width: 20px;
+    height: 20px;
+    background-image: url('../../assets/images/checkMark.svg'), linear-gradient(255.35deg, #DC3131 0.83%, rgba(255, 79, 79, 0) 108.93%);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color: #FF5E56;
+    border-radius: 6px;
+    position: absolute;
+    left: 0;
+    cursor: pointer;
+    display: none;
+}
+
+.calcCheckbox:checked + .calcLabel::after {
+    display: block;
+}
+
+.calcLabel span {
+    color: #808080;
+    margin: 0 0 0 3px;
+}
+

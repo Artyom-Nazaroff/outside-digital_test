@@ -1,0 +1,196 @@
+.background {
+    min-height: 100vh;
+    width: 100vw;
+    background: rgba(0, 0, 0, 0.3);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+.form {
+    background: #FFFFFF;
+    border-radius: 30px;
+    padding: 32px;
+    width: 552px;
+}
+
+.formTop {
+    display: flex;
+    justify-content: space-between;
+    margin: 0 0 16px;
+}
+
+.formTitle {
+    font-weight: 500;
+    font-size: 28px;
+    line-height: 40px;
+}
+
+.formText {
+    font-size: 14px;
+    line-height: 24px;
+    color: #808080;
+    margin: 0 0 24px;
+    max-width: 470px;
+}
+
+.formSalary {
+    width: 100%;
+    margin: 0 0 24px;
+}
+
+.salaryTitle {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 24px;
+    margin: 0 0 8px;
+}
+
+.formClose {
+    cursor: pointer;
+}
+
+.salaryInput {
+    width: 100%;
+    border: 1px solid #DFE3E6;
+    border-radius: 3px;
+    padding: 8px 0 8px 10px;
+    box-sizing: border-box;
+    margin: 0 0 6px;
+    outline: none;
+}
+
+.salaryInput:hover {
+    border: 1px solid #000000;
+}
+
+.salaryInput::placeholder {
+    font-size: 14px;
+    line-height: 24px;
+    color: #BEC5CC;
+}
+
+.salaryBtn {
+    border: none;
+    background-color: transparent;
+    padding: 0;
+    cursor: pointer;
+    color: #EA0029;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 24px;
+}
+
+.choice {
+    display: flex;
+    align-items: center;
+    margin: 0 0 40px;
+}
+
+.choiceTitle {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 24px;
+    margin: 0 32px 0 0;
+}
+
+.firstBtn {
+    margin: 0 16px 0 0;
+    background: linear-gradient(255.35deg, #DC3131 0.83%, rgba(255, 79, 79, 0) 108.93%), #FF5E56;
+    border-radius: 50px;
+    font-size: 14px;
+    line-height: 24px;
+    color: #fff;
+    border: none;
+    padding: 6px 12px;
+    cursor: pointer;
+}
+
+.firstBtn:hover {
+    background-color: #EA0029;
+}
+
+.secondBtn {
+    border: none;
+    padding: 6px 12px;
+    cursor: pointer;
+    color: black;
+    background: #EEF0F2;
+    border-radius: 50px;
+    font-size: 14px;
+    line-height: 24px;
+}
+
+.addBtn {
+    padding: 16px 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    background: linear-gradient(255.35deg, #DC3131 0.83%, rgba(255, 79, 79, 0) 108.93%), #FF5E56;
+    box-shadow: 0 0 24px rgba(234, 0, 41, 0.33);
+    border-radius: 6px;
+    border: none;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 24px;
+    color: #fff;
+    cursor: pointer;
+}
+
+.addBtn:hover {
+    background-color: #EA0029;
+}
+
+@media (max-width: 769px) {
+    .form {
+        width: 453px;
+    }
+}
+
+@media (max-width: 426px) {
+    .background {
+        padding: 0;
+    }
+    .form {
+        min-height: 100vh;
+        width: 100vw;
+        border-radius: 0;
+        padding: 16px;
+        position: relative;
+    }
+    .formTitle {
+        margin: 16px 0 0 0;
+        font-size: 18px;
+        line-height: 24px;
+        font-weight: 500;
+    }
+    .formText {
+        font-size: 12px;
+        line-height: 16px;
+        max-width: 100%;
+    }
+    .choice {
+        max-width: 145px;
+        flex-wrap: wrap;
+    }
+    .choiceTitle {
+        margin: 0 0 24px 0;
+    }
+    .firstBtn {
+        margin: 0 8px 0 0;
+    }
+    .addBtnContainer {
+        width: 100%;
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        padding: 0 15px 15px 15px;
+    }
+    .addBtn {
+        padding: 12px 0;
+        font-size: 12px;
+        line-height: 16px;
+    }
+}
