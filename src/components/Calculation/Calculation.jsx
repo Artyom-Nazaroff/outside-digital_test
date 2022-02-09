@@ -1,19 +1,22 @@
-import React from 'react';
+import React, {useContext} from 'react';
 import stl from './Calculation.module.css';
+import {ModalWindowContext} from "../../context/modalWindowContext/modalWindowContext";
+import CheckboxItem from "./CheckboxItem/CheckboxItem";
 
 const Calculation = () => {
+    const {modalState} = useContext(ModalWindowContext);
+
     return (
         <div className={stl.calcWrapper}>
             <h2 className={stl.calcTitle}>Итого можете внести в качестве досрочных:</h2>
             <ul className={stl.calcItems}>
-                <li className={stl.calcItem}>
-                    <input type="checkbox" id={'first'} className={stl.calcCheckbox}/>
-                    <label htmlFor={'first'} className={stl.calcLabel}>78 000 рублей <span>в 1-ый год</span></label>
-                </li>
-                <li className={stl.calcItem}>
-                    <input type="checkbox" id={'second'} className={stl.calcCheckbox}/>
-                    <label htmlFor={'second'} className={stl.calcLabel}>78 000 рублей <span>в 1-ый год</span></label>
-                </li>
+                {modalState.checkboxes.map(item =>
+                    <CheckboxItem
+                        key={item.year}
+                        year={item.year}
+                        amount={item.amount}
+                    />
+                )}
             </ul>
         </div>
     );

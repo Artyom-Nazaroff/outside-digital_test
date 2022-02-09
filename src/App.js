@@ -1,14 +1,19 @@
-import React, {useState} from "react";
+import React, {useContext} from "react";
 import StartScreen from "./components/StartScreen/StartScreen";
 import ModalWindow from "./components/ModalWindow/ModalWindow";
+import {StartScreenContext} from "./context/startScreenContext/startScreenContext";
 
 function App() {
-    const [state, setState] = useState(true);
-
+    const {appState} = useContext(StartScreenContext);
 
     return (
         <div>
-            {!state ? <StartScreen/> : <ModalWindow/>}
+            {appState.visibleStartScreen
+                ?
+                <StartScreen/>
+                :
+                <ModalWindow/>
+            }
         </div>
     );
 }
