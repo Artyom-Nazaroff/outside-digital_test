@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/outside-digital_test/static/css/main.6ba554eb.css",
+    "main.js": "/outside-digital_test/static/js/main.5cc7e200.js",
+    "static/media/closeWindow.svg": "/outside-digital_test/static/media/closeWindow.beb7d290f7bfa4d4987d51d926d1f391.svg",
+    "index.html": "/outside-digital_test/index.html",
+    "static/media/checkMark.svg": "/outside-digital_test/static/media/checkMark.62a8ceaede4a3d2121af.svg",
+    "main.6ba554eb.css.map": "/outside-digital_test/static/css/main.6ba554eb.css.map",
+    "main.5cc7e200.js.map": "/outside-digital_test/static/js/main.5cc7e200.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.6ba554eb.css",
+    "static/js/main.5cc7e200.js"
+  ]
+}
